@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/GameUI.uss?fileID=7433441132597879392&amp;guid=53c5c34b3f7ed18468296995e658b8fd&amp;type=3#GameUI" />
+    <ui:VisualElement name="UpperControls" style="flex-grow: 1; flex-direction: row; justify-content: space-around; padding-top: 25px;">
+        <ui:Label tabindex="-1" text="Score: 0" parse-escape-sequences="true" display-tooltip-when-elided="true" name="GameScore" class="game--label" style="display: none;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="MenuScreen" style="flex-grow: 1; flex-direction: column; justify-content: flex-start; padding-top: 25px; position: absolute; width: 100%; height: 100%;">
+        <ui:VisualElement style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="ZIGZAG" parse-escape-sequences="true" display-tooltip-when-elided="true" class="game--label" style="height: 25%; font-size: 220px; color: rgb(13, 13, 13);" />
+            <ui:Label tabindex="-1" text="RACER" parse-escape-sequences="true" display-tooltip-when-elided="true" class="game--label" style="font-size: 191px; height: 15%;" />
+            <ui:Label tabindex="-1" text="High Score: 1000" parse-escape-sequences="true" display-tooltip-when-elided="true" name="HighScore" class="game--label" style="height: 20%; font-size: 75px;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 0; justify-content: center; height: 20%;">
+            <ui:VisualElement name="Tap" class="Game-tapLabel--tansition">
+                <ui:Label tabindex="-1" text="TAP TO START" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TapText" class="game--label" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,30 @@
+.game--label {
+    -unity-font-style: bold;
+    font-size: 90px;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+    height: 20%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    -unity-font: url('project://database/Assets/Blockt.ttf?fileID=12800000&guid=aecbcdfb2f7ab3d4ebf09d66bbe52d87&type=3#Blockt');
+    -unity-font-definition: initial;
+}
+
+.Game-tapLabel--tansition {
+    font-size: 64px;
+    transition-duration: 1s;
+    flex-basis: 100%;
+}
+
+.Game-tapLabel-Transition--end {
+    transition-duration: 1s;
+    scale: 0.8 0.8;
+    flex-basis: 75%;
+    translate: 0 -50px;
+}
