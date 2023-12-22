@@ -362,7 +362,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.5660378, g: 0.26008055, b: 0, a: 0}
+  m_BackGroundColor: {r: 0.9150943, g: 0.60399246, b: 0.14158057, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -387,7 +387,7 @@ Camera:
   far clip plane: 1000
   field of view: 49
   orthographic: 1
-  orthographic size: 5.5
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -412,7 +412,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0.32359135, y: 0.33827534, z: -0.12513496, w: 0.87475693}
-  m_LocalPosition: {x: -5.89, y: 9.3, z: -6.47}
+  m_LocalPosition: {x: -5.89, y: 10, z: -6.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -432,6 +432,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1469303403}
   smoothValue: 5
+  colors:
+  - {r: 0.9607843, g: 0.1764706, b: 0.32941177, a: 1}
+  - {r: 0.17910287, g: 0.7769144, b: 0.8113208, a: 1}
+  - {r: 0.8018868, g: 0.2148451, b: 0.68597394, a: 1}
+  - {r: 0.72335386, g: 0.8773585, b: 0.185404, a: 1}
+  - {r: 0.13574219, g: 0.8773585, b: 0.33800116, a: 1}
+  - {r: 0.8679245, g: 0.56058896, b: 0.10153075, a: 1}
 --- !u!1 &1013238209
 GameObject:
   m_ObjectHideFlags: 0
@@ -884,6 +891,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7151302065715869182, guid: d649aeb30ab9955449aee94b491df2e0, type: 3}
+      propertyPath: scoreManager
+      value: 
+      objectReference: {fileID: 1013238212}
+    - target: {fileID: 7151302065715869182, guid: d649aeb30ab9955449aee94b491df2e0, type: 3}
+      propertyPath: _particleSystem
+      value: 
+      objectReference: {fileID: 6144034909536566536, guid: 4de9e3c8ffda99e4f8825bd73042bfe1, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

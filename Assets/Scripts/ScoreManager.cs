@@ -37,8 +37,7 @@ public class ScoreManager : MonoBehaviour
 
         MenuScreen.style.display = DisplayStyle.Flex;
         scoreText.style.display = DisplayStyle.None;
-        scoreText.text = "Score: 0";
-        _audioManager = FindObjectOfType<AudioManager>();
+        scoreText.text = "0";
         HighScore.text = $"High Score: {Mathf.FloorToInt(PlayerPrefs.GetFloat("HighScore", 0))}";
         StartCoroutine(Transition());
         
@@ -56,12 +55,16 @@ public class ScoreManager : MonoBehaviour
 
     private void Update()
     {
+        if(_audioManager == null)
+        {
+            _audioManager = FindObjectOfType<AudioManager>();
+        }
         if(GameManager.instance.isGameStarted)
         {
             scoreText.style.display = DisplayStyle.Flex;
             MenuScreen.style.display = DisplayStyle.None;
             levelScore += _iscoreMultiplier * Time.deltaTime;
-            scoreText.text = $"Score: {Mathf.FloorToInt(levelScore)}";
+            scoreText.text = $"{Mathf.FloorToInt(levelScore)}";
             UpdateHighScore();
         }
     }
