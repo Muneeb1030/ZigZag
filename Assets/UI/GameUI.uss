@@ -12,7 +12,7 @@
     padding-right: 0;
     padding-bottom: 0;
     padding-left: 0;
-    -unity-font: url('project://database/Assets/Blockt.ttf?fileID=12800000&guid=aecbcdfb2f7ab3d4ebf09d66bbe52d87&type=3#Blockt');
+    -unity-font: url("project://database/Assets/Blockt.ttf?fileID=12800000&guid=aecbcdfb2f7ab3d4ebf09d66bbe52d87&type=3#Blockt");
     -unity-font-definition: initial;
 }
 
@@ -27,4 +27,46 @@
     scale: 0.8 0.8;
     flex-basis: 75%;
     translate: 0 -50px;
+}
+
+.btn__rate {
+    position: absolute;
+    bottom: 2%;
+    align-self: center;
+    width: 30%;
+    height: 6%;
+    -unity-font: url("project://database/Assets/Blockt.ttf?fileID=12800000&guid=aecbcdfb2f7ab3d4ebf09d66bbe52d87&type=3#Blockt");
+    -unity-font-definition: initial;
+    -unity-font-style: bold;
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+    white-space: normal;
+    letter-spacing: 10px;
+    word-spacing: 2px;
+    background-color: rgb(255, 255, 255);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-right-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.btn__rate:active {
+    scale: 1.1 1.1;
 }

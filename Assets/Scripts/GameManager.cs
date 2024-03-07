@@ -1,8 +1,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
+    VisualElement veroot;
+    VisualElement pnlMain;
     public static GameManager instance;
     [SerializeField] private GameObject PlatformSpawn;
     [HideInInspector]
@@ -14,10 +17,19 @@ public class GameManager : MonoBehaviour
             instance = this;
         }
     }
+    private void OnEnable()
+    {
+        veroot = GetComponent<UIDocument>().rootVisualElement;
+        pnlMain = veroot.Q<VisualElement>("Main");
+        pnlMain.RegisterCallback<ClickEvent>(evt =>
+        {
+            isGameStarted = true;
+        });
+    }
 
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if(isGameStarted)
         {
             GameStart();
         }
