@@ -1,21 +1,8 @@
 # Zig-Zag Game
 
-## Overview
-
 Welcome to the Zig-Zag Game! This Unity game challenges players to control a vehicle that moves left and straightens in a zig-zag pattern upon tapping the screen.
 
-## Table of Contents
-
-- [Getting Started](#getting-started)
-- [Game Features](#game-features)
-- [Controls](#controls)
-- [Development Setup](#development-setup)
-- [Assets](#assets)
-- [Contributing](#contributing)
-
 ## Getting Started
-
-### Prerequisites
 
 - Unity 2019.3 or later
 - Your favorite code editor (e.g., Visual Studio)
@@ -25,7 +12,7 @@ Welcome to the Zig-Zag Game! This Unity game challenges players to control a veh
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/zigzag-vehicle-control.git
+    https://github.com/Muneeb1030/ZigZag.git
     ```
 
 2. Open the project in Unity.
